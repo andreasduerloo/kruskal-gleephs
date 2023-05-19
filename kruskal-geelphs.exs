@@ -81,8 +81,4 @@ defmodule Kruskal do
   end
 end
 
-Kruskal.generate(24) |> Kruskal.draw()
-Kruskal.generate(20) |> Kruskal.draw()
-Kruskal.generate(16) |> Kruskal.draw()
-Kruskal.generate(12) |> Kruskal.draw()
-Kruskal.generate(8) |> Kruskal.draw()
+Kruskal.generate(Enum.random(8..24)) |> Kruskal.draw()
