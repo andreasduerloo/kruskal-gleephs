@@ -35,3 +35,5 @@ For a while now I have been trying to figure out algorithms to generate these gl
   - If neither of the adjoining nodes have more than one connection, activate this connection
   - If either node already has two connections, move on without activating this connection
 - Discard that connection from the pool of connections, and get the next random one.
+
+The major difference with Kruskal's algorithm is that we check for the amount of connections to a node rather than whether two nodes are already connected. In this case we allow two nodes to be connected through more than one path, which means we allow (and frequently get) closed loops.
